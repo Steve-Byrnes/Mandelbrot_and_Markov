@@ -46,9 +46,8 @@ def markov_generate(n, N):
         normList.append(np.linalg.norm(p - p_stationary))
         p = np.dot(P_T, p)
     
-    # Generate plot for difference between p and p_stationary
+    # Generate plot for norm of p - p_stationary
     plt.plot(normList)
-    plt.title('Iterating the Difference Between p and p_stationary')
     plt.ylabel('Norm of p - p_stationary')
     plt.show()
 
