@@ -11,6 +11,7 @@ Function with arguments n -> points, N_max -> number of iterations, and threshol
 - Recursively iterate through f(z) = z^2 + c, for each point in the grid, for N_max iterations
 - Use a boolean mask over the values, determining which do not diverge
 - Results are plotted and saved to a png file
+
 The function is then tested with respective values of 5000, 50, and 50.
 
 For markov_chain.py:
@@ -26,4 +27,5 @@ Function with arguments n -> size of transition matrix (n x n). and N -> number 
 - Iterate through for N steps, with P_T * p, using dot() function
 - Each step, compare norm of p - p_stationary, using norm() function
 - Results are plotted and displayed
+
 The function is then tested with respective values of 5 and 50.
